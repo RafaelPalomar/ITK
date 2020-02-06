@@ -9,7 +9,7 @@ if(ITK_USE_SYSTEM_EIGEN)
 else()
   set(_eigen_itk_target ITKInternalEigen3::Eigen)
 endif()
-set(ITKEigen3_LIBRARIES ${_eigen_itk_target})
+# set(ITKEigen3_LIBRARIES ${_eigen_itk_target})
 # Assume that Eigen generates a Eigen3Config.cmake
 set(_Eigen3_min_version 3.3)
 
