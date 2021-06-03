@@ -388,6 +388,11 @@ GetTypename(const std::type_info & intype)
   {
     typestr = "char";
   }
+  else if (intype == typeid(unsigned short) || intype == typeid(itk::Vector<unsigned short, 2>) ||
+           intype == typeid(itk::Vector<unsigned short, 3>))
+  {
+    typestr = "unsigned short";
+  }
   else if (intype == typeid(short) || intype == typeid(itk::Vector<short, 2>) ||
            intype == typeid(itk::Vector<short, 3>))
   {
